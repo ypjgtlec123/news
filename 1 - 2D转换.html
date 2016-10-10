@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+		/*************** 2d动画 	************************
+		 * transition:
+		 * transform :
+		 * translate()
+		 *  rotate()
+		 * scale(x,y);
+		 * skew();
+		 **********************************************/
+			div{
+				width:300px;
+				height:100px;
+				background-color: #f00;
+				text-align:center;
+				line-height:100px;
+				color:#fff;
+				font-size:2rem;
+				transition:all 2s;
+				margin:30px auto;
+			}
+			#div1:hover{
+				transform:translate(30px,30px);
+				/*transform:translateX(60px);
+				transform:translateY(60px);*/
+			}
+			#div2:hover{
+				transform:rotate(90deg);
+			}
+			#div3:hover{
+				transform:scale(2,2);
+			}
+			#div4:hover{
+				transform:translate(60px,60px) rotate(360deg) scale(1.2,1.2);
+			}
+			#div5:hover{
+				transform:skew(30deg,10deg);
+				/*transform:skewX(60deg);
+				transform:skewY(60deg);*/
+			}
+		</style>
+	</head>
+	<body>
+		<div id="div1">移动transform</div>
+		<div id="div2">移动rotate</div>
+		<div id="div3">缩放scale</div>
+		<div id="div4">组合效果</div>
+		<div id="div5">移动skew</div>
+	</body>
+</html>
